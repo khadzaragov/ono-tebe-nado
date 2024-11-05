@@ -50,10 +50,6 @@ main {
   }
   
   .address {
-    font-style: inherit;
-  }
-  
-  .address {
     justify-self: end;
     font-style: inherit;
   }
