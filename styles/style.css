@@ -1,7 +1,6 @@
 main {
     display: flex;
     flex-direction: column;
-    gap: 183px;
   }
   
   .content-section {
@@ -75,6 +74,7 @@ main {
   
   .cover {
     position: relative;
+    margin-bottom: 184px;
     padding: 82px 50px 50px 50px;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
@@ -167,9 +167,14 @@ main {
     background-color: transparent;
     cursor: pointer;
   }
+
+  .lots {
+    padding: 0 25px;
+    margin-bottom: 146px;
+  }
   
   .lots__heading {
-    padding: 0 0 30px 40px;
+    margin: 0 0 30px 40px;
     font-weight: bold;
     font-size: 40px;
     line-height: 1;
@@ -180,17 +185,22 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 25px;
+    margin: 0;
+    padding: 0;
     list-style: none;
+  }
+
+  .lots__card-list-item {
+    margin: 0;
+    padding: 0;
   }
   
   .card {
     position: relative;
     display: flex;
-    box-sizing: content-box;
     flex-direction: column;
     justify-content: space-between;
-    gap: 30px;
-    width: 334px;
+    padding: 50px 40px 48px;
     height: 563px;
   }
   
@@ -218,6 +228,7 @@ main {
     z-index: 1;
     color: #FFF;
     font-weight: bold;
+    margin: 0;
     font-size: 22px;
     line-height: 1.2;
     text-decoration-line: underline;
@@ -228,19 +239,29 @@ main {
     position: relative;
     z-index: 1;
     color: #FFF;
+    margin: 0;
     font-size: 20px;
     line-height: 1.2;
     text-decoration: none;
   }
-  
-  .about {
-    display: flex;
-    column-gap: 24px;
-    padding: 0 50px;
+
+  .lots__look-more-link {
+    margin: 30px 0 0 40px;
+    font-size: 20px;
   }
-  
-  .about__column {
-    padding: 0 0 0 20px;
+
+  .about {
+    padding: 0 24px;
+  }
+
+  .about__wrapper {
+    display: flex;
+    column-gap: 72px;
+    padding: 35px 0 0 47px;
+  }
+
+  .about__column--text {
+    margin-top: 100px;
   }
   
   .about__logo {
@@ -258,22 +279,25 @@ main {
   }
   
   .about__title {
-    padding: 72px 0 49px 30px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 100px;
     font-weight: bold;
     font-size: 40px;
-    line-height: 1;
     text-transform: uppercase;
   }
   
   .about__text {
     display: flex;
+    gap: 24px;
     flex-direction: column;
-    padding: 0 0 104px 30px;
+    padding: 0;
     max-width: 750px;
-    margin: 0 auto;
+    margin: 0;
   }
   
   .about__text p {
+    margin: 0;
     font-size: 20px;
     line-height: normal;
   }
